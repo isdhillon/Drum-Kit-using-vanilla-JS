@@ -1,12 +1,19 @@
 //Declarations
 let drumKeys=document.querySelectorAll(".drum-keys");
 let w=document.createElement("audio");
+w.setAttribute("src","sounds/tom-1.mp3")
 let a=document.createElement("audio");
+a.setAttribute("src","sounds/tom-2.mp3")
 let s=document.createElement("audio");
+s.setAttribute("src","sounds/tom-3.mp3")
 let d=document.createElement("audio");
+d.setAttribute("src","sounds/tom-4.mp3")
 let j=document.createElement("audio");
+j.setAttribute("src","sounds/snare.mp3")
 let k=document.createElement("audio");
+k.setAttribute("src","sounds/crash.mp3")
 let l=document.createElement("audio");
+l.setAttribute("src","sounds/kick-bass.mp3")
 //event listener of click
 for(let i=0;i<drumKeys.length;i++){
     drumKeys[i].addEventListener("click",function(){
@@ -30,39 +37,31 @@ document.addEventListener("keypress",function(e){
 function playSound(key){
     //w 
     if(key=='w'){
-        //setting src
-        w.setAttribute("src","sounds/tom-1.mp3")
         //playing sound
         w.play();
     }
     //a
     else if(key=='a'){
-        a.setAttribute("src","sounds/tom-2.mp3")
        a.play(); 
     }
     //s
     else if(key=='s'){
-        s.setAttribute("src","sounds/tom-3.mp3")
         s.play();
     }
     //d
     else if(key=='d'){
-        d.setAttribute("src","sounds/tom-4.mp3")
         d.play();
     }
     //j
     else if(key=='j'){
-        j.setAttribute("src","sounds/snare.mp3")
         j.play();
     }
     //k
     else if(key=='k'){
-        k.setAttribute("src","sounds/crash.mp3")
         k.play();
     }
     //l
     else if(key=='l'){
-        l.setAttribute("src","sounds/kick-bass.mp3")
         l.play();
     }
 }
