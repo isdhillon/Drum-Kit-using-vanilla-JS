@@ -1,0 +1,75 @@
+/*Applied to all*/
+*{
+    box-sizing: border-box;
+}
+/*HTML TAGS*/
+body{
+    margin: 0;
+}
+/*Main Container*/
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(22, 21, 21)
+}
+/*Top Container*/
+.top-container{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 0;
+    font-size: 5rem;
+    color: #A11E22;
+    font-weight: bolder;
+}
+
+/*Drum section*/
+.drum-container{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.drum-keys{
+    height: 10rem;
+    width: 10rem;
+    background-color: white;
+    border: solid 10px lightgrey;
+    border-radius: 5px;
+    
+}
+.w{
+    background-image: url(images/tom1.png);
+}
+.a{
+    background-image: url(images/tom2.png);
+}
+.s{
+    background-image: url(images/tom3.png);
+}
+.d{
+    background-image: url(images/tom4.png);
+}
+.j{
+    background-image: url(images/snare.png);
+}
+.k{
+    background-image: url(images/crash.png);
+}
+.l{
+    background-image: url(images/kick.png);
+}
+
+/*Animation part*/
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
